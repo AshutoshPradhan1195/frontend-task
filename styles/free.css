@@ -1,0 +1,21 @@
+.free-tag{
+    background-color: #C6AD2E;
+    color: white;
+}
+
+.free-container{
+    background: linear-gradient(180deg, #F5FFF7 0%, rgba(245, 255, 247, 0) 100%) !important;
+    box-shadow: 0px 4px 4px 0px #00000005 !important;
+
+
+}
+
+.free-container .courses{
+    background-color: inherit !important;
+}
+
+.free-container .grid img{
+
+    border-radius: 10px;
+    min-width: 100px;
+}

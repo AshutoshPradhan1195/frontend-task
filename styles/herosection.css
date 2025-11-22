@@ -1,0 +1,416 @@
+.herosection {
+    max-height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: white;
+    font-weight: 500;
+    font-size: 14px !important;
+    gap: 5px;
+    overflow: visible;
+    padding: 0.5rem 5rem !important;
+    padding-bottom: 0 !important;
+
+}
+
+
+
+
+
+.trailing-next{
+    background-color: #C6802E;
+    color: #C6AD2E;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+
+.hero-circles-wrapper {
+    position: absolute;
+    overflow: hidden; 
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    height: 500px; 
+}
+
+
+.herosection-enrolled-icons{
+    width: 20px; height:20px; 
+    transform:rotate(180deg) scaleX(-1);
+    color: var(--light-text-color);
+}
+
+.icon-background{
+    width: 30px;
+    height: 30px;
+    background-color: var(--middle-text-color);
+    transform: none;
+    border-radius: 100%;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.total-students-icon{
+    color: #31933e;
+    min-width: 35px !important;
+    min-height: 35px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a1e5aa ;
+    border-radius: 100%;
+}
+
+.icon-background:nth-child(1){
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-image: url("../assets/user4.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.icon-background:nth-child(2){
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px !important;
+    z-index: 9;    
+    background-image: url("../assets/user3.jpg");
+    background-size: cover;
+    background-position: center;
+
+
+}
+.icon-background:nth-child(3){
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px !important;
+    z-index: 8;
+    background-image: url("../assets/user2.jpg");
+    background-size: cover;
+    background-position: center;
+
+
+}
+.icon-background:nth-child(4){
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px !important;
+    background-image: url("../assets/user1.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 7;
+
+}
+
+.icon-background:nth-child(5){
+    font-size: 11px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -7px !important;
+
+    z-index: 6;
+
+}
+.herosection-buttons button{
+    border-radius: 5px;
+}
+.herosection-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.enrolled-students{
+    margin-top: 1rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-bg-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0rem;
+}
+
+.total-students{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-bg-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0rem;
+}
+
+.total-students-container{
+    display: flex;  
+    flex-direction: column; 
+    gap: 10rem; 
+    z-index: 2; 
+    justify-content: space-between; 
+    align-items: stretch;
+}
+
+.hero-subtext{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--very-light-text-color);
+}
+
+.hero-text-green{
+    color: var(--primary-bg-color);
+}
+
+.hero-text{
+    font-size: 40px;
+    font-weight: 700;
+    color: #595555;
+}
+
+
+@media (min-width: 2000px) {
+    .circle-large {
+        right: 0px !important;
+        width: 500px;
+        height: 500px;
+        box-shadow: none !important;
+    }
+
+    .circle-small {
+        right: -10px !important;
+        width: 300px !important;
+        height: 300px;
+        box-shadow: none !important;
+
+    }
+
+
+
+    .hero-circles-wrapper {
+        position: absolute;
+        overflow: hidden; 
+        width: 500px;
+        margin: 0;
+        padding: 0;
+        right: calc((100vw - 2000px)/2) !important;
+        height: 500px; 
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .hero-text{
+        font-size: 24px;
+    }
+}
+
+
+
+.hero-image{
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1.5/2;
+    margin-top: 4rem;
+}
+
+
+.circle-large {
+    position: absolute;
+    bottom: -100px;       
+    right: -130px;
+    width: 500px;
+    height: 500px;
+    background: #DDF3DF;   
+    border-radius: 50%;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.15); 
+    z-index: 1;
+}
+
+.circle-small {
+    position: absolute;
+    bottom: -100px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+
+    background: #E9F9EB;   
+    border-radius: 50%;
+    box-shadow: 5px 4px 11px 0px #0000001C; 
+    z-index: 1;
+}
+
+
+
+
+
+/* LEFT TEXT COLUMN */
+.herosection > div:first-child {
+    max-width: 420px;
+}
+
+/* HERO IMAGE */
+.hero-image {
+    width: clamp(240px, 40vw, 500px);
+    height: auto;
+    object-fit: cover;
+    z-index: 2;
+}
+
+/* RIGHT STATS COLUMN */
+.herosection > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    z-index: 2;
+}
+
+/* TEXT */
+.hero-text {
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: 700;
+    color: #595555;
+}
+
+.hero-subtext {
+    font-size: 14px;
+    color: var(--very-light-text-color);
+}
+
+
+
+@media (max-width: 1100px) {
+    .herosection {
+        flex-direction: column;
+        text-align: center !important;
+        background-image: url("../assets/hero\ section\ image.png");
+        background-repeat: no-repeat;
+    
+        background-position: right;
+        background-size: contain;
+        min-height: 400px;
+        padding-bottom: 2rem !important;
+        padding-top: 2rem;
+        position: relative;
+    }
+
+    .total-students{
+        font-size: 20px;
+    }
+
+    .enrolled-students{
+        font-size: 20px;
+    }
+
+    .herosection > div:first-child {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .hero-circles-wrapper {
+        margin: 0;
+        padding: 0;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        height: 400px;
+
+    }
+    .circle-large {
+        width: 300px;
+        position: absolute;
+        height: 300px;
+        bottom: -50px;
+        right: -100px;
+        z-index: 1;
+        opacity: 0.9;
+
+
+    }
+    .total-students-container{
+        gap:10px
+    }
+    
+    .hero-image{
+        display: none;
+    }
+
+    .enrolled-students-container{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle-small {
+        width: 160px;
+        height: 160px;
+        bottom: -30px;
+        right: -50px;
+        z-index: 1;
+        opacity: 0.9;
+
+
+    }
+}
+
+@media (max-width: 600px) {
+    .base-padding{
+        padding: 0.5rem 2rem !important;
+    }
+    .herosection {
+        background-image: none;
+        max-height: fit-content !important;
+        padding-bottom: 2rem !important;
+        padding-top: 2rem
+
+    }
+
+
+    .circle-large {
+        width: 300px;
+        height: 300px;
+        bottom: -50px;
+        right: -100px;
+    }
+
+    .circle-small {
+        width: 150px;
+        height: 150px;
+        bottom: -10px;
+        right: -50px;
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+    .base-padding{
+        padding-bottom: 2rem !important;
+        padding-top: 2rem    
+    }
+}

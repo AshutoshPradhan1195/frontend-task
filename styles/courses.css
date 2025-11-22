@@ -1,0 +1,188 @@
+.courses-container {
+    height: fit-content;
+}
+
+.courses{
+    background-color: white;
+    padding: 4rem;
+    box-sizing: border-box;
+    font-size: 14px !important;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card-button{
+    padding: 0.5rem 1.5rem !important;
+}
+.grid{
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card{
+    width: 100%;
+    background-color: #E2E8F0;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    border: 1px solid #DAEAFF;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+
+.card-content {
+    background-color: none !important;
+    border: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100%;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.card-tag{
+    background-color: #FFF8D7;
+    color: var(--dark-text-color);
+    width: fit-content;
+    padding: 0px 10px;
+    font-weight: 500;
+}
+
+.card-heading{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-text{
+    font-size: 14px;
+    color: var(--card-text-color);
+}
+
+.card-actions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grid img{
+    object-fit: cover;
+    aspect-ratio: 1.4/1;
+    max-width: auto;
+    border-radius: 0px;
+    min-width: 100px;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+
+    transform: scale(1.0);
+
+}
+
+.dots {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background-color: var(--primary-bg-color);
+    transform: scale(1.3);
+}
+
+
+.grid img:hover{
+    transform: scale(1.01) !important;
+
+}
+
+
+
+@media (max-width: 1400px) {
+    .grid img{
+        max-width: 100%;
+        height: fit-content;
+    }
+
+
+    .card{
+        flex-direction: column;
+        height: fit-content;
+        padding: 2rem;
+    }
+
+    .courses{
+        padding: 4rem;
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    
+
+    .section-header{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .grid img{
+        aspect-ratio: 1/1.2;
+        min-width: 200px
+    }
+    .card {
+        padding: 1rem;
+    }
+
+    .courses{
+        padding: 2rem;
+
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .card{
+        flex-direction: column;
+        height: fit-content;
+        padding: 1rem;
+    }
+
+    .grid img:hover{
+        transform: none;
+
+    }
+
+    .grid img{
+        max-width: 100%;
+        height: fit-content;
+        aspect-ratio: 1;
+    }
+
+    .courses{
+        padding: 1rem;
+
+    }
+}

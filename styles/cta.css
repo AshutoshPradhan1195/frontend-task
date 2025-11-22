@@ -1,0 +1,125 @@
+/* --- Base Layout --- */
+.hero-cta-section {
+    background-color: #F5FFF7;
+    border-bottom: 2px solid #E1F1BA;
+    padding: 0.5rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px !important;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+
+.fa {
+    color: #2F2C2C;
+    font-size: 16px;
+}
+
+/* --- Left Section --- */
+.hero-cta-enquiry-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+/* --- Middle Section --- */
+.hero-cta-contact-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    color: var(--dark-text-color);
+    flex-wrap: wrap;
+}
+
+.hero-cta-contact-section .fa {
+    color: var(--light-text-color);
+}
+
+.hero-cta-download-section {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-text-color);
+}
+
+.hero-cta-download-section button {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    color:white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hero-cta-download-section div {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+@media (max-width: 1200px) {
+    .hero-cta-section {
+        padding: 0.8rem 2rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        gap: 1rem;
+    }
+    .base-padding{
+        padding: 0.8rem 2rem !important ;
+    }
+}
+
+@media (max-width: 1100px) {
+    .hero-cta-section {
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+    .base-padding{
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-cta-section {
+        padding: 1rem 0.5rem;
+    }
+
+    .hero-cta-contact-section {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .hero-cta-enquiry-section div {
+        gap: 0.7rem !important;
+    }
+
+    .hero-cta-download-section {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .base-padding{
+        padding: 1rem 0.5rem;
+    }
+    .fa {
+        font-size: 16px;
+    }
+}
